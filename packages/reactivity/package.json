@@ -1,10 +1,13 @@
 {
-  "name": "reactivity",
+  "name": "@hdcq/reactivity",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@hdcq/utils": "workspace:*"
   },
   "keywords": [],
   "author": "",
