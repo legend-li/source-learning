@@ -1,5 +1,11 @@
+const getType = (val) => {
+  return Object.prototype.toString.call(val).slice(8, -1);
+};
 const isObject = (val) => {
-  return typeof val === "object" && val !== null;
+  return getType(val) === "Object";
+};
+const isOn = (key) => {
+  return /^on[^a-z]/.test(key);
 };
 
-export { isObject };
+export { getType, isObject, isOn };
